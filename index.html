@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assests/homePage-styling/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -27,8 +31,8 @@
                 </svg>
             </div>
             <div class="links">
-                <a href="">Places to stay</a>
-                <a href="">Experiences</a>
+                <a href="./test.html">Places to stay</a>
+                <a href="./searchListing.html">Experiences</a>
                 <a href="">Online Experiences</a>
             </div>
             <div class="header-right">
@@ -58,14 +62,35 @@
                 </div>
             </div>
         </div>
-        <div class="search-box">
-
-        </div>
+        <form id="search-bar" class="search-box">
+            <div>
+                <label for="location">Location</label><br>
+                <input id="location" type="text" name="place" placeholder="Where are you going?">
+            </div>
+            <div>
+                <label for="Check-in">Check in</label><br>
+                <input id="check-in" type="date" name="checkIn" placeholder="Add date">
+            </div>
+            <div>
+                <label for="Check-out">Check out</label><br>
+                <input id="check-out" type="date" name="checkOut" placeholder="Add date">
+            </div>
+            <div>
+                <label for="guests">Add guests</label><br>
+                <input id="guests" type="text" name="guests" placeholder="Add guests">
+            </div>
+            <div id="search-btn-div">
+                <button type="submit" id="search-btn" class="search-btn">
+                    <span id="search"></span>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </form>
     </header>
 
 
     <section class="home-page">
-        
+
         <img src="./assests/Images/home-img/Big Card.png" alt="">
     </section>
 
@@ -237,6 +262,8 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- <script type="text/javascript" src="./script2.js"></script> -->
 </body>
 
 </html>
